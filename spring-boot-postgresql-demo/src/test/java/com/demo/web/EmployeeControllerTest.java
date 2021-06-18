@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +25,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import com.example.demo.SpringBootPostgresqlDemoApplication;
 import com.example.demo.model.Employee;
@@ -37,7 +35,7 @@ import com.example.demo.web.EmployeeController;
  * The Class EmployeeControllerTest.
  * @author smrutipragyan.mishra
  */
-@RunWith(SpringRunner.class)
+
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, classes = SpringBootPostgresqlDemoApplication.class)
 @AutoConfigureMockMvc
 public class EmployeeControllerTest {
